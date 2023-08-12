@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+
+<body>
+    <h2>Temperature Converter</h2>
+    <div class="center-item">
+        <div class="converter">
+            <p>Result :
+                <br>
+                <br><span id="pre-result"></span> <span id="resultText"></span>
+            </p>
+
+            <input style="appearance: none; display: none;" class="output" type="number" id="toValue" readonly />
+
+            <div class="fit-temp">
+                <input type="number" class="input-tag" id="fromValue" placeholder="Enter value" />
+                <select class="select-tag" id="fromUnit">
+                    <option value="kelvin">Kelvin [K]</option>
+                    <option value="celsius">Celsius [°C]</option>
+                    <option value="fahrenheit">Fahrenheit [°F]</option>
+                    <option value="rankine">Rankine [°R]</option>
+                    <option value="reaumur">Reaumur [°r]</option>
+                    <option value="triple">Triple point of water</option>
+                </select>
+            </div>
+            <br>
+
+            <div class="fit-temp">
+
+                <input class="output-temp-text" type="text" id="outputText" readonly />
+                <select class="select-tag" id="toUnit">
+                    <option value="kelvin">Kelvin [K]</option>
+                    <option value="celsius">Celsius [°C]</option>
+                    <option value="fahrenheit">Fahrenheit [°F]</option>
+                    <option value="rankine">Rankine [°R]</option>
+                    <option value="reaumur">Reaumur [°r]</option>
+                    <option value="triple">Triple point of water</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>
